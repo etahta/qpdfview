@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/pdffile"/>
+    <qresource prefix="/kitap">
+        <file>file/zkitap.pdf</file>
+    </qresource>
+</RCC>

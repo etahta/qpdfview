@@ -1,0 +1,36 @@
+Source: qpdfview
+Section: utils
+Priority: optional
+Maintainer: Bayram KARAHAN <bayramk@gmail.com>
+Build-Depends: debhelper (>= 10), 
+    libqt5svg5-dev,
+    qtdeclarative5-dev,
+    libpoppler-qt5-dev,
+    libopencv-core-dev,
+    libopencv-imgproc-dev,
+    libopencv-imgcodecs-dev,
+    libopencv-highgui-dev,
+    libmupdf-dev,
+    libdjvulibre-dev,
+    libcups2-dev,
+    libspectre-dev
+Standards-Version: 3.9.8
+Homepage: http://pardus.org.tr
+
+Package: qpdfview
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends},
+     libqt5widgets5,
+     libqt5gui5,
+     libqt5core5a,
+     libqt5network5,
+     libqt5printsupport5,
+     libpoppler-qt5-1,
+     libopencv-core406,
+     libopencv-imgcodecs406,
+     libopencv-imgproc406,
+     libopencv-highgui406,
+     libdjvulibre21,
+     libcups2,
+     libspectre1
+Description: e-pdf Uygulaması
