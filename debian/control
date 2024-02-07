@@ -33,4 +33,4 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
      libdjvulibre21,
      libcups2,
      libspectre1
-Description: e-pdf Uygulaması
+Description: qpdfview Uygulaması

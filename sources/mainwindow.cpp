@@ -447,6 +447,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent),
 
     kw->setOrientation(Qt::Vertical);//Qt::Vertical Horizontal
     addToolBar(Qt::RightToolBarArea, kw);
+    //addToolBar(Qt::TopToolBarArea, kw);
 
     connect(kw, SIGNAL(kalemModeSignal(Scene::Mode,DiagramItem::DiagramType)),
             this, SLOT(kalemModeSignalSlot(Scene::Mode,DiagramItem::DiagramType)));
@@ -463,7 +464,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent),
     connect(kw, SIGNAL(kalemSekilModeSignal(DiagramItem::DiagramType)),
             this, SLOT(kalemSekilModeSignalSlot(DiagramItem::DiagramType)));
 
-   // zKitapLoad();//dosya yükleme
+   /// zKitapLoad();//dosya yükleme
 
     SettingsDialog *setting= new SettingsDialog(this);
     setting->reset();
@@ -476,7 +477,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent),
     m_viewToolBar->setVisible(false);   //view toolbar gizleniyor
     menuBar()->setVisible(false);       //Menu gizleniyor
 
-setWindowTitle("e-pdf");
+setWindowTitle("PDF OKUYUCU");
    /* setWindowTitle("ABC Yayıncılık");
     QPixmap logopixmap(":icons/icons/logo.png");
     QLabel *lg=new QLabel(this);
@@ -837,7 +838,7 @@ void MainWindow::slotPenInit()
     currentTab()->scene->setSekilTanimlamaStatus(false);
     currentTab()->scene->pageOfNumberScene=0;
     /*******************önemli ayarlar**************************************/
-    currentTab()->setContinuousMode(false);     //sayfalar birleşik gözükmeyecek
+    currentTab()->setContinuousMode(true);     //sayfalar birleşik gözükmeyecek
     currentTab()->setLayoutMode(SinglePageMode);//Tek sayfa gösterme ayarlandı
 
     //currentTab()->setScaleMode(FitToPageWidthMode);//sayfayı orijinal boyutta göster

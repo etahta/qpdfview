@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/icons">
-        <file alias="e-pdf">icons/e-pdf.svg</file>
         <file alias="image-loading">icons/image-loading.svg</file>
         <file alias="image-missing">icons/image-missing.svg</file>
         <file alias="document-open">icons/document-open.svg</file>
@@ -103,5 +102,6 @@
         <file>icons/panelsidedown.png</file>
         <file>icons/search.png</file>
         <file>icons/list.png</file>
+        <file>icons/qpdfview.svg</file>
     </qresource>
 </RCC>
